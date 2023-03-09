@@ -4,6 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Personal Diary" />
+  <meta property="og:description" content="Website to save your personal diary" />
+  <meta property="og:image" content="{{ url_for('static', filename='default-image.jpg') }}" />
+
+
   <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/747/747720.png">
   <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.js"></script>
   <title>Personal Diary</title>
@@ -57,7 +63,7 @@
             `;
             $('#cards-box').append(temp_html);
           }
-        } 
+        }
       });
     }
 
@@ -86,7 +92,7 @@
         data: form_data,
         contentType: false,
         processData: false,
-        success: function(response) {
+        success: function (response) {
           window.location.reload();
           alert('Data Berhasil di Upload');
         }
@@ -131,9 +137,7 @@
 
       <div class="col-4">
         <div class="card">
-          <img
-            src="../static/default-image.jpg"
-            class="card-img-top" alt="image-default">
+          <img src="../static/default-image.jpg" class="card-img-top" alt="image-default">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
@@ -145,9 +149,7 @@
 
       <div class="col-4">
         <div class="card">
-          <img
-            src="../static/default-image.jpg"
-            class="card-img-top" alt="image-default">
+          <img src="../static/default-image.jpg" class="card-img-top" alt="image-default">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
@@ -159,9 +161,7 @@
 
       <div class="col-4">
         <div class="card">
-          <img
-            src="../static/default-image.jpg"
-            class="card-img-top" alt="image-default">
+          <img src="../static/default-image.jpg" class="card-img-top" alt="image-default">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
